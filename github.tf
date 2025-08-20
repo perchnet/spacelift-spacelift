@@ -11,8 +11,8 @@ locals {
   gh_app_id              = local.gh_app_creds["gh_app_id"]
   gh_app_installation_id = local.gh_app_creds["gh_app_installation_id"]
 
-  gh_repository       = "spacetail_spacetail"
-  gh_repo_description = "spacetail self-configuration iac repo"
+  gh_repository       = "spacelift-spacelift"
+  gh_repo_description = "spacelift self-configuration iac repo"
   gh_owner            = "perchnet"
 }
 
