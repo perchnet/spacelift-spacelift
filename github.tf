@@ -64,8 +64,8 @@ resource "github_repository" "this" {
   }
 }
 
-resource "github_repository_ruleset" "p_merge_queue" {
-  repository  = github_repository.p_repository.name
+resource "github_repository_ruleset" "this_merge_queue" {
+  repository  = github_repository.this.name
   enforcement = "active"
   name        = "merge queue"
   rules {
