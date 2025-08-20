@@ -1,3 +1,3 @@
-output "spacetail_space_id" {
-  value = spacelift_space.spacetail.id
+output "op_credential" {
+  value = data.onepassword_item.op_spacelift.credential
 }

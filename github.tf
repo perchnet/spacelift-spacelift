@@ -1,5 +1,5 @@
 data "onepassword_item" "github_infra_app" {
-  vault = local.op_vault_uuid
+  vault = local.op_vault
   title = "github-infra-app"
 }
 locals {
