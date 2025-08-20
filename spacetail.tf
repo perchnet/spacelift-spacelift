@@ -15,6 +15,7 @@ data "onepassword_item" "tailscale_spacelift" {
 }
 output "tailscale_auth_key" {
   value = data.onepassword_item.tailscale_spacelift.password
+  sensitive = true
 }
 module "spacetail" {
   source = "github.com/caius/terraform-spacelift-tailscale"
