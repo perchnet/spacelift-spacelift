@@ -1,6 +1,4 @@
-provider "onepassword" {
-  #account = "my.1password.com"
-}
+#provider "onepassword" {}
 
 data "onepassword_item" "proxmox_api" {
   vault = local.op_vault_uuid
