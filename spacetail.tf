@@ -7,7 +7,7 @@ resource "spacelift_space" "spacetail" {
 module "spacetail" {
   source = "github.com/caius/terraform-spacelift-tailscale"
 
-  space_id = spacelift_space.this.id
+  space_id = spacelift_space.spacetail.id
   context_labels = [
     "autoattach:runtime:spacelift-tailscale",
     "terraform:true",
