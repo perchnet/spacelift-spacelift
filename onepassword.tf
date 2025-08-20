@@ -1,10 +1,4 @@
-variable "onepassword_sdk_token" {
-  type      = string
-  sensitive = true
-}
-
 provider "onepassword" {
-  service_account_token = var.onepassword_sdk_token
   #account = "my.1password.com"
 }
 
