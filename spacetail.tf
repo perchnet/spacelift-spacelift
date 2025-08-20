@@ -1,6 +1,6 @@
 
-resource "spacelift_space" "this" {
-  name            = "spacetail_space"
+resource "spacelift_space" "spacetail" {
+  name            = "spacetail"
   parent_space_id = "root"
 }
 
