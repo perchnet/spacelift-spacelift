@@ -19,7 +19,7 @@ locals {
 # Configure the GitHub Provider
 
 provider "github" {
-  owner = var.gh_owner
+  owner = local.gh_owner
   app_auth {
     id              = local.gh_app_id
     installation_id = local.gh_app_installation_id
