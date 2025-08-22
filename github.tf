@@ -27,6 +27,10 @@ provider "github" {
   }
 }
 # This repository
+import {
+  id = local.gh_repository
+  to = github_repository.this
+}
 resource "github_repository" "this" {
   name = local.gh_repository
 
