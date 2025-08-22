@@ -69,7 +69,7 @@ resource "github_repository" "this" {
 }
 
 resource "github_repository_ruleset" "this_merge_queue" {
-  repository  = github_repository.this.name
+  repository  = github_repository.this.repo_id
   enforcement = "active"
   name        = "merge queue"
   rules {
